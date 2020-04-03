@@ -121,47 +121,101 @@
     <section class="main-section" id="kw_cue">
         <header>::cue</header>
         <article>
-            <p>Section Text</p>
-
-            <ul>
-                <li>List items</li>
-            </ul>
+            <p>The ::cue CSS pseudo-element matches WebVTT cues within a selected element. This can be used to style captions and other 
+                cues in media with VTT tracks.</p>
 
             <code>
-                Code text
+                ::cue {
+                  color: yellow;
+                  font-weight: bold;
+                }
             </code>
+
+            <p>Rules with ::cue in their selectors are limited to using only CSS properties from the following list:</p>
+            <ul>
+                <li>background and its longhand properties</li>
+                <li>color</li>
+                <li>font and its longhand properties</li>    
+                <li>line-height</li>    
+                <li>opacity</li>    
+                <li>outline and its longhand properties</li>    
+                <li>ruby-position</li>    
+                <li>text-combine-upright</li>    
+                <li>text-decoration and its longhand properties</li>    
+                <li>text-shadow</li>    
+                <li>visibility</li>
+                <li>white-space</li>
+            </ul>
+
         </article>
     </section>
 
     <section class="main-section" id="kw_cue-region">
         <header>::cue-region</header>
         <article>
-            <p>Section Text</p>
-
-            <ul>
-                <li>List items</li>
-            </ul>
+            <p>The ::cue-region CSS pseudo-element matches WebVTT cues within a selected element. This can be used to style captions 
+                and other cues in media with VTT tracks.</p>
 
             <code>
-                Code text
+                ::cue-region {
+                  color: yellow;
+                  font-weight: bold;
+                }
             </code>
+
+            <p>Rules with ::cue-region in their selectors are limited to using only CSS properties from the following list:</p>
+            <ul>
+                <li>background and its longhand properties</li>
+                <li>color</li>
+                <li>font and its longhand properties</li>    
+                <li>line-height</li>    
+                <li>opacity</li>    
+                <li>outline and its longhand properties</li>    
+                <li>ruby-position</li>    
+                <li>text-combine-upright</li>    
+                <li>text-decoration and its longhand properties</li>    
+                <li>text-shadow</li>    
+                <li>visibility</li>
+                <li>white-space</li>
+            </ul>
+
+
         </article>
     </section>
 
     <section class="main-section" id="kw_first-letter">
         <header>::first-letter</header>
         <article>
-            <p>Section Text</p>
-
-            <ul>
-                <li>List items</li>
-            </ul>
+            <p>The ::first-letter CSS pseudo-element applies styles to the first letter of the first line of a block-level element, 
+                but only when not preceded by other content (such as images or inline tables).</p>
 
             <code>
-                Code text
+                /* Selects the first letter of a <p> */
+                p::first-letter {
+                  font-size: 130%;
+                }
             </code>
+
+            <p>The first letter of an element is not always trivial to identify:</p>
+
+            <ul>
+                <li>Punctuation that precedes or immediately follows the first letter is included in the match. Punctuation includes any 
+                    Unicode character defined in the open (Ps), close (Pe), initial quote (Pi), final quote (Pf), and other 
+                    punctuation (Po) classes.</li>
+                <li>Some languages have digraphs that are always capitalized together, like the IJ in Dutch. In these cases, both 
+                    letters of the digraph should be matched by the ::first-letter pseudo-element. (This is poorly supported by 
+                    browsers; see the browser compatibility table below.)</li>
+                <li>A combination of the ::before pseudo-element and the content property may inject some text at the beginning 
+                    of the element. In that case, ::first-letter will match the first letter of this generated content.</li>
+            </ul>
+            
+            
         </article>
     </section>
+
+
+
+
 
 
     <section class="main-section" id="kw_first-line">
