@@ -190,7 +190,7 @@
                 but only when not preceded by other content (such as images or inline tables).</p>
 
             <code>
-                /* Selects the first letter of a <p> */
+                /* Selects the first letter of a p */
                 p::first-letter {
                   font-size: 130%;
                 }
@@ -213,27 +213,38 @@
         </article>
     </section>
 
-
-
-
-
-
     <section class="main-section" id="kw_first-line">
         <header>::first-line</header>
         <article>
-            <p>Section Text</p>
-
-            <ul>
-                <li>List items</li>
-            </ul>
+            <p>The ::first-line CSS pseudo-element applies styles to the first line of a block-level element. Note that the length of the 
+                first line depends on many factors, including the width of the element, the width of the document, and the font size 
+                of the text.</p>
 
             <code>
-                Code text
+                /* Selects the first line of a p */
+                p::first-line {
+                  color: red;
+                }
             </code>
+
+            <p>Only a small subset of CSS properties can be used with the ::first-line pseudo-element:</p>
+
+            <ul>
+                <li>All font-related properties: font, font-kerning, font-style, font-variant, font-variant-numeric, 
+                    font-variant-position, font-variant-east-asian, font-variant-caps, font-variant-alternates, font-variant-ligatures, 
+                    font-synthesis, font-feature-settings, font-language-override, font-weight, font-size, font-size-adjust, 
+                    font-stretch, and font-family</li>
+
+                <li>All background-related properties: background-color, background-clip, background-image, background-origin, 
+                    background-position, background-repeat, background-size,  background-attachment, and background-blend-mode</li>
+                <li>The color property</li>
+                <li>word-spacing, letter-spacing, text-decoration, text-transform, and line-height</li>
+                <li>text-shadow, text-decoration, text-decoration-color, text-decoration-line, text-decoration-style, and 
+                    vertical-align.</li>
+            </ul>
         </article>
     </section>
 
-
-
+    
 </main>
 </body>
